@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ver:</strong>
+  <%= @androidversion.ver %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @androidversion.name %>
+</p>
+
+<p>
+  <strong>Api:</strong>
+  <%= @androidversion.api %>
+</p>
+
+<%= link_to 'Edit', edit_androidversion_path(@androidversion) %> |
+<%= link_to 'Back', androidversions_path %>

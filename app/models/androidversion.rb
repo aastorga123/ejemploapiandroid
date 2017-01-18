@@ -1,0 +1,2 @@
+class Androidversion < ApplicationRecord
+end

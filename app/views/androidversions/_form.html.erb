@@ -1,0 +1,32 @@
+<%= form_for(androidversion) do |f| %>
+  <% if androidversion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(androidversion.errors.count, "error") %> prohibited this androidversion from being saved:</h2>
+
+      <ul>
+      <% androidversion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ver %>
+    <%= f.text_field :ver %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :api %>
+    <%= f.text_field :api %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

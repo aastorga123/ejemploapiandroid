@@ -1,0 +1,5 @@
+androidversion = Androidversion.create(ver: "1.5",  name: "Cupcake", api: "API level 3")
+androidversion2 = Androidversion.create(ver: "4.0",  name: "Ice Cream Sandwich", api: "API level 14 - 15")
+androidversion3 = Androidversion.create(ver: "4.1",  name: "JellyBean", api: "API level 16")
+androidversion4 = Androidversion.create(ver: "4.4",  name: "KitKat", api: "API level 19")
+androidversion5 = Androidversion.create(ver: "5.0",  name: "lollipop", api: "API level 21")
