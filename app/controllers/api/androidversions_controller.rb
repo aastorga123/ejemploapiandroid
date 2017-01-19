@@ -5,7 +5,7 @@ class Api::AndroidversionsController < ApplicationController
   def index
     @androidversions = Androidversion.all
 
-    render json: @androidversions.as_json(root: true, except: [:created_at, :updated_at])
+    render json: @androidversions.as_json(root: true, except: [:created_at, :updated_at], location: @androidversions)
   end
 
   # GET /androidversions/1
