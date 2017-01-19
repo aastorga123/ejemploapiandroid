@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'active_model_serializers'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'pg'
 gem 'puma', '~> 3.0'

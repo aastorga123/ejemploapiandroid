@@ -4,20 +4,8 @@ class Api::AndroidversionsController < ApplicationController
   # GET /androidversions
   def index
     @androidversions = Androidversion.all
-    @listaAndroid = Array.new
-    @androidversion = Androidversion.new
-    @androidversions.each do |android|
 
-      @androidversion.ver = android.ver
-      @androidversion.name = android.name
-      @androidversion.api = android.api
-      @listaAndroid.push(@androidversion)
-
-    end
-
-
-
-    render json: @listaAndroid.as_json(root: false, except: [:created_at, :updated_at, :id])
+    render json: @androidversions.as_json(root: true, except: [:created_at, :updated_at])
   end
 
   # GET /androidversions/1
